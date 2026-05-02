@@ -1,15 +1,20 @@
-# Module 5 placeholder.
-# Fill map_file_name after a mapping session. Actual localization behavior
-# will be completed and validated in Module 5.
 slam_toolbox:
   ros__parameters:
     solver_plugin: solver_plugins::CeresSolver
+    ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
+
     odom_frame: odom
     map_frame: map
     base_frame: BASE_LINK
     scan_topic: /scan
+
     mode: localization
     map_file_name: ""
+    map_start_pose: [0.0, 0.0, 0.0]
+
     transform_publish_period: 0.02
     minimum_travel_distance: 0.1
     minimum_travel_heading: 0.175
+
+    use_scan_matching: true
+    use_scan_barycenter: true
