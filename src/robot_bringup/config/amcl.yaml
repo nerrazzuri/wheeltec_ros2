@@ -1,0 +1,9 @@
+# AMCL is a fallback only.
+# Primary localization is slam_toolbox localization mode, completed in Module 5.
+amcl:
+  ros__parameters:
+    use_sim_time: false
+    global_frame_id: map
+    odom_frame_id: odom
+    base_frame_id: BASE_LINK
+    scan_topic: /scan

@@ -1,0 +1,38 @@
+# ROS2 build artifacts
+build/
+install/
+log/
+
+# Colcon / test artifacts
+.colcon/
+.pytest_cache/
+coverage/
+htmlcov/
+.coverage
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ROS runtime logs / recordings
+.ros/
+*.bag
+*.db3
+*.mcap
+
+# Temporary maps / generated map output
+*_tmp.yaml
+*_test.yaml
+*.yaml.tmp
+
+# Large/generated pointcloud or scan captures
+*.pcd
+*.ply
