@@ -35,7 +35,7 @@ def generate_launch_description():
                         [
                             FindPackageShare("lslidar_driver"),
                             "launch",
-                            "lsm10_net_launch.py",
+                            "lsm10_uart_launch.py",
                         ]
                     )
                 ),
@@ -86,7 +86,7 @@ def generate_launch_description():
             DeclareLaunchArgument(
                 "start_lidar",
                 default_value="true",
-                description="Start the M10 Ethernet LiDAR driver. Set false when the driver is already running.",
+                description="Start the M10 UART LiDAR driver. Set false when the driver is already running.",
             ),
             DeclareLaunchArgument(
                 "map_file",
